@@ -1,0 +1,28 @@
+These are the exercises throughout the intermediate javascript lesson
+
+1. Basic Love Score Calculator
+alert("WELCOME TO THE LOVE CALCULATOR");
+prompt("Enter the first person name?");
+prompt("Enter the second person name?");
+var loveScore = Math.floor((Math.random() * 100)) + 1; // between 1 - 100
+alert("Love percentage is " + p + "%");
+
+2. BMI Calculator with condition
+function bmiCalculator (weight, height) {
+    var interpretation = "No Information";
+    var bmi = weight / Math.pow(height, 2);
+    bmi = Math.round(bmi);
+
+    if (bmi > 24.9) {
+        interpretation = "Your BMI is " + bmi + ", so you are over weight";
+    }else if (bmi >= 18.5 && bmi <= 24.9) {
+        interpretation = "Your BMI is " + bmi + ", so you have normal weight";
+    }else {
+        interpretation = "Your BMI is " + bmi + ", so you are under weight";
+    } 
+    return interpretation;
+}
+var w = Math.round(Math.random() * 100 + 1);
+var h = Math.round(Math.random() * 1.5 + 1);
+alert("Your (weight,height) = ("+ w + "," + h + "). " + bmiCalculator(w, h));
+
